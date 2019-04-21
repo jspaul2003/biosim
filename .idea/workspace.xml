@@ -16,8 +16,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/biosim.R">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="65" lean-forward="true" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
+            <state relative-caret-position="405">
+              <caret line="208" column="17" lean-forward="true" selection-start-line="208" selection-start-column="17" selection-end-line="208" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.R">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="117" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="117" />
             </state>
           </provider>
         </entry>
@@ -28,6 +37,7 @@
     <findStrings>
       <find>dist</find>
       <find>a=</find>
+      <find>plot</find>
       <find>print</find>
     </findStrings>
   </component>
@@ -42,8 +52,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1056" />
-    <option name="y" value="94" />
+    <option name="x" value="1151" />
+    <option name="y" value="151" />
     <option name="width" value="1399" />
     <option name="height" value="1000" />
   </component>
@@ -58,6 +68,15 @@
             <path>
               <item name="biosim" type="b2602c69:ProjectViewProjectNode" />
               <item name="biosim" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="biosim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="biosim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
             </path>
           </expand>
           <select />
@@ -95,18 +114,20 @@
       <updated>1555256569560</updated>
       <workItem from="1555256572761" duration="5163000" />
       <workItem from="1555340253250" duration="299000" />
-      <workItem from="1555699007657" duration="8832000" />
+      <workItem from="1555699007657" duration="9067000" />
+      <workItem from="1555760208138" duration="3428000" />
+      <workItem from="1555801068474" duration="4898000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14294000" />
+    <option name="totallyTimeSpent" value="22855000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1056" y="94" width="1399" height="1000" extended-state="0" />
+    <frame x="1151" y="151" width="1399" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25718495" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26455417" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -137,15 +158,15 @@
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.R">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+        <state relative-caret-position="390">
+          <caret line="26" column="117" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="117" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/biosim.R">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="65" lean-forward="true" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
+        <state relative-caret-position="405">
+          <caret line="208" column="17" lean-forward="true" selection-start-line="208" selection-start-column="17" selection-end-line="208" selection-end-column="17" />
         </state>
       </provider>
     </entry>

@@ -38,7 +38,7 @@ dist = function(grid){
     }
     c(r,m,d)
 }
-biosim=function(len,r,m,d){
+biosim=function(len,r,m,d,dr){
     data=c()
     a=r
     b=m
@@ -57,24 +57,29 @@ biosim=function(len,r,m,d){
     d.m=d-d.f
     #now make the population => EVEN represents male or female, 'tens' digit the type
     pop=c()
-    for(i in 1:r.f){
-        pop=c(pop,2)
+    for(i in 1:(r+m+d)){
+        if(r.f!=0){
+            pop=c(pop,2)
+        }
+        if(r.m!=0){
+            pop=c(pop,1)
+        }
+        if(m.f!=0){
+            pop=c(pop,12)
+        }
+        if(m.m!=0){
+            pop=c(pop,11)
+        }
+        if(d.f!=0){
+            pop=c(pop,22)
+        }
+        if(d.f!=0){
+            pop=c(pop,21)
+        }
     }
-    for(i in 1:r.m){
-        pop=c(pop,1)
-    }
-    for(i in 1:m.f){
-        pop=c(pop,12)
-    }
-    for(i in 1:m.m){
-        pop=c(pop,11)
-    }
-    for(i in 1:d.f){
-        pop=c(pop,22)
-    }
-    for(i in 1:d.m){
-        pop=c(pop,21)
-    }
+    #randomize
+    pop=sample(pop)
+    print(pop)
     #begin simulation
     for(gen in n){
     #loop through the population sort of => tracking reproduction
@@ -84,18 +89,34 @@ biosim=function(len,r,m,d){
             chosen=chosen+1
             #the chosen one
             ch=floor(runif(1, min=1,max=p+1))
+            track=0
+            track2=0
             #is it marked, dont wanna go over it again eg in the 100s
-            while(pop[ch]>99 || pop[ch]==0){
+            while((pop[ch]>99 || pop[ch]==0) && track<=size){ #what if theyre all dead or done?
                 ch=floor(runif(1, min=1,max=p+1))
+                track=track+1
+                print(track)
+                print(size)
+                print(pop[ch])
             }
             #the chosen one meets another person-> will they reproduce eg m and f?
             mate=floor(runif(1, min=1,max=p+1))
             #is it marked, dont wanna go over it again eg in the 100s
-            while(pop[mate]>99 ||pop[ch]==0){
+            while((pop[mate]>99 ||pop[ch]==0) && track2<=size){
                 mate=floor(runif(1, min=1,max=p+1))
+                track2=track2+1
             }
-            if(mate%%2!=ch%%2){
-                #print('SexOhYeahhhhhh') THAT WAS A JOKE
+            #and because death exists, theres a dr chance of death :(
+            if(runif(1, min=0,max=1)<=dr){
+                #death
+                pop[ch]=0 #represent it as dead
+            }
+            #and because death exists, theres a dr chance of death :(
+            if(runif(1, min=0,max=1)<=dr){
+                #death
+                pop[mate]=0 #represent it as dead
+            }
+            if(mate%%2!=ch%%2 && pop[mate]!=0 && pop[ch]!=0){
                 #success => reproduce
                 #we are now less interested in the sexes and more in the tens (recessive, dominant or mix)
                 #to do the calculations we will use matrix theory since this is easier
@@ -108,7 +129,7 @@ biosim=function(len,r,m,d){
                 if(runif(1, min=0,max=1)<=dis[1]/4){
                     kid=0
                 }
-                else if(runif(1, min=0,max=1)>(dis[1]+dis[2])/4){
+                else if(runif(1, min=0,max=1)<=(dis[3])/4){
                     kid=20
 
                 }
@@ -124,17 +145,19 @@ biosim=function(len,r,m,d){
                 else{
                 kid=kid+2
                 }
+                if(kid<20){
+                    print(pop[ch])
+                    print(pop[mate])
+                    print(p1)
+                    print(p2)
+                }
                 p=p+1
                 pop=c(pop,kid)
                 chosen=chosen+1
                 pop[mate]=100+pop[mate]
             }
-            pop[ch]=100+pop[ch]
-            #and because death exists, theres a 25% chance of death :(
-            if(floor(runif(1, min=1,max=5))==1){
-                #death
-                #print('DeathOhShiiiiiiiiiit') AGAIN A JOKE
-                pop[ch]=0 #represent it as dead
+            if(pop[ch]!=0){
+                pop[ch]=100+pop[ch]
             }
         }
         #new generation, run the garbage collector to reset for next generation, and collect some data!
@@ -149,7 +172,7 @@ biosim=function(len,r,m,d){
                     newgen=c(newgen,pop[i]-100)
                     newp=newp+1
                 }
-                else if(pop[i]!=0 && pop[i]!=100){
+                else if(pop[i]!=0){
                     newgen=c(newgen,pop[i])
                     newp=newp+1
                 }
@@ -157,6 +180,8 @@ biosim=function(len,r,m,d){
         }
         p=newp
         pop=newgen
+        pop=sample(pop)
+        print(pop)
         r=0
         m=0
         d=0
@@ -180,12 +205,28 @@ biosim=function(len,r,m,d){
         a=c(a,r)
         b=c(b,m)
         c=c(c,d)
-        print(r)
-        print(d)
-        print(m)
-        print(p)
     }
     data=c(a,b,c)
+}
+#biosim gets raw data but maybe we want to print that data easily?
+easyPrint=function(data){
+    par(mfrow=c(2,2))
+    plot(data[1:(length(data)/3)],xlab='Generations',ylab='Population of Recessive only carriers')
+    plot(data[(1+length(data)/3):(2*length(data)/3)],xlab='Generations',ylab='Population of Mixed carriers')
+    plot(data[(1+length(data)/3*2):length(data)],xlab='Generations',ylab='Population of Dominant only carriers')
+    recessivenum=c()
+    domnum=c()
+    for(i in 1:(length(data)/3)){
+        print(i)
+        print(length(domnum))
+        r=data[i]*2+data[i+length(data)/3]
+        recessivenum=c(recessivenum,r)
+        d=data[i+length(data)/3]+2*i+2*length(data)/3
+        domnum=c(domnum,d)
+    }
+    plot(seq(0,length(data)/3-1),recessivenum, xlab = 'Generations', ylab='Total Distribution of recessive and dominant genes',col='red')
+    legend('bottomright', legend=c("Recessive", "Dominant"), col=c("red", "blue"),pch = c(15,15),bty = "n")
+    lines(seq(0,length(data)/3-1),domnum,col='blue')
 }
 
 
