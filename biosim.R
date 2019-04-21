@@ -79,7 +79,7 @@ biosim=function(len,r,m,d,dr){
     }
     #randomize
     pop=sample(pop)
-    print(pop)
+    #print(pop)
     #begin simulation
     for(gen in n){
     #loop through the population sort of => tracking reproduction
@@ -95,9 +95,6 @@ biosim=function(len,r,m,d,dr){
             while((pop[ch]>99 || pop[ch]==0) && track<=size){ #what if theyre all dead or done?
                 ch=floor(runif(1, min=1,max=p+1))
                 track=track+1
-                print(track)
-                print(size)
-                print(pop[ch])
             }
             #the chosen one meets another person-> will they reproduce eg m and f?
             mate=floor(runif(1, min=1,max=p+1))
@@ -145,12 +142,6 @@ biosim=function(len,r,m,d,dr){
                 else{
                 kid=kid+2
                 }
-                if(kid<20){
-                    print(pop[ch])
-                    print(pop[mate])
-                    print(p1)
-                    print(p2)
-                }
                 p=p+1
                 pop=c(pop,kid)
                 chosen=chosen+1
@@ -181,7 +172,6 @@ biosim=function(len,r,m,d,dr){
         p=newp
         pop=newgen
         pop=sample(pop)
-        print(pop)
         r=0
         m=0
         d=0
@@ -217,8 +207,6 @@ easyPrint=function(data){
     recessivenum=c()
     domnum=c()
     for(i in 1:(length(data)/3)){
-        print(i)
-        print(length(domnum))
         r=data[i]*2+data[i+(length(data)/3)]
         recessivenum=c(recessivenum,r)
         d=data[i+(length(data)/3)]+2*data[i+2*(length(data)/3)]

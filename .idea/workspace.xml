@@ -15,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/biosim.R">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="886">
-              <caret line="223" column="57" lean-forward="true" selection-start-line="223" selection-start-column="10" selection-end-line="223" selection-end-column="57" />
+            <state>
+              <caret selection-end-line="217" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -115,12 +115,12 @@
       <workItem from="1555340253250" duration="299000" />
       <workItem from="1555699007657" duration="9067000" />
       <workItem from="1555760208138" duration="3428000" />
-      <workItem from="1555801068474" duration="5569000" />
+      <workItem from="1555801068474" duration="5862000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23526000" />
+    <option name="totallyTimeSpent" value="23819000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1462" y="139" width="975" height="1256" extended-state="0" />
@@ -164,8 +164,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/biosim.R">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="886">
-          <caret line="223" column="57" lean-forward="true" selection-start-line="223" selection-start-column="10" selection-end-line="223" selection-end-column="57" />
+        <state>
+          <caret selection-end-line="217" selection-end-column="1" />
         </state>
       </provider>
     </entry>
