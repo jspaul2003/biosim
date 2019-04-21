@@ -3,7 +3,7 @@
 # Created by: jspaul
 # Created on: 2019-04-14
 # Required Packages:
-#ToDo: selection at a later date?, data representation, debugging
+#ToDo: selection at a later date?, debugging/efficiency?
 
 #NOT SEX Chromosomes
 #stuff for later on
