@@ -219,12 +219,12 @@ easyPrint=function(data){
     for(i in 1:(length(data)/3)){
         print(i)
         print(length(domnum))
-        r=data[i]*2+data[i+length(data)/3]
+        r=data[i]*2+data[i+(length(data)/3)]
         recessivenum=c(recessivenum,r)
-        d=data[i+length(data)/3]+2*i+2*length(data)/3
+        d=data[i+(length(data)/3)]+2*data[i+2*(length(data)/3)]
         domnum=c(domnum,d)
     }
-    plot(seq(0,length(data)/3-1),recessivenum, xlab = 'Generations', ylab='Total Distribution of recessive and dominant genes',col='red')
+    plot(seq(0,length(data)/3-1),recessivenum,type='l', xlab = 'Generations', ylab='Total Distribution of recessive and dominant genes',col='red')
     legend('bottomright', legend=c("Recessive", "Dominant"), col=c("red", "blue"),pch = c(15,15),bty = "n")
     lines(seq(0,length(data)/3-1),domnum,col='blue')
 }

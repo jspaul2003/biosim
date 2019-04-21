@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6aa3db0b-8913-487f-b501-e8c62c76247c" name="Default Changelist" comment="" />
+    <list default="true" id="6aa3db0b-8913-487f-b501-e8c62c76247c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/biosim.R" beforeDir="false" afterPath="$PROJECT_DIR$/biosim.R" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/biosim.R">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="178" column="13" lean-forward="true" selection-start-line="178" selection-start-column="13" selection-end-line="178" selection-end-column="13" />
+            <state relative-caret-position="886">
+              <caret line="223" column="57" lean-forward="true" selection-start-line="223" selection-start-column="10" selection-end-line="223" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -22,8 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.R">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="117" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="117" />
+            <state relative-caret-position="375">
+              <caret line="25" column="48" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -49,9 +51,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="605" />
-    <option name="y" value="145" />
-    <option name="width" value="1955" />
+    <option name="x" value="1462" />
+    <option name="y" value="139" />
+    <option name="width" value="975" />
     <option name="height" value="1256" />
   </component>
   <component name="ProjectView">
@@ -113,18 +115,18 @@
       <workItem from="1555340253250" duration="299000" />
       <workItem from="1555699007657" duration="9067000" />
       <workItem from="1555760208138" duration="3428000" />
-      <workItem from="1555801068474" duration="5144000" />
+      <workItem from="1555801068474" duration="5569000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23101000" />
+    <option name="totallyTimeSpent" value="23526000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="605" y="145" width="1955" height="1256" extended-state="0" />
+    <frame x="1462" y="139" width="975" height="1256" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18766336" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3847803" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -155,15 +157,15 @@
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.R">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="117" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="117" />
+        <state relative-caret-position="375">
+          <caret line="25" column="48" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/biosim.R">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="178" column="13" lean-forward="true" selection-start-line="178" selection-start-column="13" selection-end-line="178" selection-end-column="13" />
+        <state relative-caret-position="886">
+          <caret line="223" column="57" lean-forward="true" selection-start-line="223" selection-start-column="10" selection-end-line="223" selection-end-column="57" />
         </state>
       </provider>
     </entry>
