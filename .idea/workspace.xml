@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6aa3db0b-8913-487f-b501-e8c62c76247c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/biosim.R" beforeDir="false" afterPath="$PROJECT_DIR$/biosim.R" afterDir="false" />
-    </list>
+    <list default="true" id="6aa3db0b-8913-487f-b501-e8c62c76247c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +13,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/biosim.R">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+            <state relative-caret-position="222">
+              <caret line="178" column="13" lean-forward="true" selection-start-line="178" selection-start-column="13" selection-end-line="178" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -51,10 +49,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1151" />
-    <option name="y" value="151" />
-    <option name="width" value="1399" />
-    <option name="height" value="1000" />
+    <option name="x" value="605" />
+    <option name="y" value="145" />
+    <option name="width" value="1955" />
+    <option name="height" value="1256" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -115,18 +113,18 @@
       <workItem from="1555340253250" duration="299000" />
       <workItem from="1555699007657" duration="9067000" />
       <workItem from="1555760208138" duration="3428000" />
-      <workItem from="1555801068474" duration="5029000" />
+      <workItem from="1555801068474" duration="5144000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22986000" />
+    <option name="totallyTimeSpent" value="23101000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1151" y="151" width="1399" height="1000" extended-state="0" />
+    <frame x="605" y="145" width="1955" height="1256" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26455417" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18766336" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -164,8 +162,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/biosim.R">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+        <state relative-caret-position="222">
+          <caret line="178" column="13" lean-forward="true" selection-start-line="178" selection-start-column="13" selection-end-line="178" selection-end-column="13" />
         </state>
       </provider>
     </entry>
